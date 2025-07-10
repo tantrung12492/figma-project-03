@@ -1,10 +1,96 @@
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --header-bg: #10375c;
+}
+
 html {
   font-size: 62.5%;
 }
 body {
   font-family: "Sora", sans-serif;
   font-size: 1.6rem;
+}
+/* ======== Phần Common (dùng chung) ======== */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  background: #2e80ce;
+  min-width: 205px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 999px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* ======== Phần Header ======== */
+.header {
+  background: var(--header-bg);
+  min-height: 100vh;
+  padding-top: 30px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+}
+.action__login,
+.navbar__link {
+  padding: 8px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.navbar__link:hover,
+.navbar__link--active,
+.btn {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+/* Khi hover thì thêm cái dấu chấm phía trước nữa , toàn bộ thuộc tính bên trong là DÀNH CHO DẤU CHẤM !!! */
+.navbar__link:hover::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  top: -3px;
+  right: 8px;
+}
+.logo {
+  cursor: pointer;
+}
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action__login {
+  margin-right: 7px;
+}
+.action__signup {
+  min-width: 104px; /* này ghi sau nên sẽ ăn , thay vì cái .btn có min-width 205px ở phần common nhé */
+  line-height: 44px;
+  border-radius: 22px;
+  background: #2e80ce;
 }
