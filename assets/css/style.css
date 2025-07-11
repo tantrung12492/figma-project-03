@@ -58,8 +58,7 @@ a {
   line-height: 1.75;
 }
 .navbar__link:hover,
-.navbar__link--active,
-.btn {
+.navbar__link--active {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 400;
@@ -75,7 +74,7 @@ a {
   background: #fff;
   position: relative;
   top: -3px;
-  right: 8px;
+  left: -8px;
 }
 .logo {
   cursor: pointer;
@@ -89,8 +88,73 @@ a {
   margin-right: 7px;
 }
 .action__signup {
-  min-width: 104px; /* này ghi sau nên sẽ ăn , thay vì cái .btn có min-width 205px ở phần common nhé */
+  min-width: 104px; /*này ghi sau nên sẽ ăn , thay vì cái .btn có min-width 205px ở phần common nhé */
   line-height: 44px;
   border-radius: 22px;
   background: #2e80ce;
+}
+
+/* ======== Phần Hero ======== */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 76px; */
+  padding-top: 76px;
+}
+.hero__content {
+  width: 44%;
+}
+.hero__media {
+  flex: 1;
+}
+.hero__heading {
+  color: #fff;
+  font-family: Sora;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+.hero__desc {
+  color: #c9d2da;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+  margin-top: 22px;
+}
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-family: Sora;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+.hero__image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero__img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+.hero__img-large {
+  width: 330px;
+  height: 540px;
+  margin-right: -6px; /* Để nó đè lên cái ảnh nhỏ */
+  z-index: 1; /* Để nó nằm trên lớp cái ảnh nhỏ */
+}
+.hero__img-small {
+  width: 210px;
+  height: 410px;
 }
