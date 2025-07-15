@@ -188,7 +188,7 @@ a {
 }
 .service__desc {
   max-width: 468px; /*CÁI NÀY K XÀI 1 MÌNH ĐC VÌ ĐẶC TÍNH THẺ P LÀ BLOCK (CHIẾM HẾT CHIỀU NGANG) NÊN GIỚI HẠN ĐỘ RỘNG THÌ BỀ NGANG CÒN BÉ TÍ */
-  margin: 0 auto; /* Để căn giữa */
+  margin: 18px auto 0; /* Để căn giữa */
 }
 .service__row {
   display: flex;
@@ -249,4 +249,70 @@ a {
 }
 .service__btn {
   margin-top: 55px;
+}
+/* ======== Phần tự làm thử ======== */
+.hiw {
+  background: #f6fbff;
+  padding: 100px 0;
+}
+.hiw__tittle {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+}
+.hiw__desc {
+  width: 468px;
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
+.banut {
+  margin-top: 86px;
+  display: flex;
+  gap: 46px;
+}
+.banut__title {
+  margin-top: 18px;
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38; /* 138.462% */
+}
+.banut__text {
+  margin-top: 28px;
+  /* width: 300px; XÀI THÌ NÓ RỘNG VỠ LAYOUT BỀ NGANG */
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.banut__learn-more {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  width: 91px;
+  display: inline-block;
+  margin-top: 18px;
+}
+.banut__btn {
+  /* width: 370px; XÀI CÁI NÀY THÌ PADDING K GIÃN GIỐNG THIẾT KẾ  */
+  background: #fff;
+  border-radius: 4px;
+  border: 16px solid #eaf6ff;
+  padding: 43px;
+}
+.banut__btn:hover {
+  border-color: #2e80ce;
+  transition: 0.5s;
+  transform: translateY(-16px);
+
+  /* transform: perspective(1000px) rotateX(5deg) rotateY(3deg);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);*/
+}
+.banut__learn-more:hover {
+  color: #2e80ce;
 }
