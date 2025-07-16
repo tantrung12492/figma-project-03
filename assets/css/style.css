@@ -250,7 +250,7 @@ a {
 .service__btn {
   margin-top: 55px;
 }
-/* ======== Phần tự làm thử ======== */
+/* ======== Phần How it work (tự làm thử) ======== */
 .hiw {
   background: #f6fbff;
   padding: 100px 0;
@@ -315,4 +315,57 @@ a {
 }
 .banut__learn-more:hover {
   color: #2e80ce;
+}
+/* ======== Phần about 4 ông bác sĩ (tự làm thử) ======== */
+.section {
+  padding: 170px 0;
+}
+.section__title {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.section__header {
+  text-align: center;
+}
+.section__btn {
+  margin-top: 38px;
+}
+.section__about {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 34px;
+}
+.section__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #eaf6ff;
+}
+.section__name {
+  margin-top: 12px;
+  color: #10375c;
+  font-size: 1.6rem;
+  line-height: 1.7; /* 175% */
+  text-align: center;
+}
+.section__info {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.85; /* 185.714% */
+}
+.section__logo {
+  margin-top: 38px;
+  text-align: center;
+}
+.section__card:hover {
+  border: 10px solid #eaf6ff;
+  border-radius: 20px;
+  border-color: #7296e3;
+  transition: 0.2s;
+  transform: translateY(-16px);
 }
