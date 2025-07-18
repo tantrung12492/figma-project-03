@@ -390,17 +390,18 @@
         </div>
       </section>
 
-      <!-- Khối About (Test - Tự Làm) -->
+      <!-- Khối Our virtual (Test - Tự Làm) -->
       <section class="section">
         <div class="container">
           <!-- Khối chữ tiêu đề ở trên -->
           <div class="section__header">
             <h2 class="section__title">Our virtual dentist</h2>
-            <p class="btn section__btn">Meet our dentist</p>
+            <a class="btn section__btn">Meet our dentist</a>
           </div>
 
           <!-- Khối ảnh 4 ông ở dưới-->
           <div class="section__about">
+            <!-- đây chính là kiểu item list á -->
             <!-- Ông thứ 1 -->
             <div class="section__card">
               <img src="./assets/img/doctor1.jpg" alt="" class="section__img" />
@@ -438,12 +439,51 @@
             </div>
           </div>
           <!-- Logo trái phải -->
-          <div class="section__logo">
+          <!-- <div class="section__logo">
             <img
               src="./assets/img/logo_trai_phai.svg"
               alt=""
               class="section__logo-leftright"
             />
+          </div> -->
+
+          <!-- Cái nút qua trái - qua phải -->
+          <div class="control team__control">
+            <!-- previous -->
+            <button class="control__btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="12"
+                viewBox="0 0 6 12"
+                fill="none"
+              >
+                <path
+                  d="M5.5 1L0.5 6L5.5 11"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <!-- next -->
+            <button class="control__btn control__btn--next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="12"
+                viewBox="0 0 6 12"
+                fill="none"
+              >
+                <path
+                  d="M5.5 1L0.5 6L5.5 11"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>

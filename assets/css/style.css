@@ -49,6 +49,24 @@ a {
   line-height: 1.67; /* 166.667% */
   margin-top: 18px;
 }
+/* ========== cái nút qua trái - qua phải ========== */
+.control {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+}
+
+.control__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575f66;
+  background: #fff;
+  cursor: pointer;
+}
 /* ======== Phần Header ======== */
 .header {
   background: var(--header-bg);
@@ -308,6 +326,7 @@ a {
 }
 .banut__btn:hover {
   border-color: #2e80ce;
+  border-radius: 20px;
   transition: 0.5s;
   transform: translateY(-16px);
 
@@ -319,7 +338,7 @@ a {
 }
 /* ======== Phần about 4 ông bác sĩ (tự làm thử) ======== */
 .section {
-  padding: 170px 0;
+  padding: 85px 0;
 }
 .section__title {
   color: #10375c;
@@ -337,10 +356,11 @@ a {
   margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 34px;
+  column-gap: 30px;
 }
 .section__img {
-  width: 100%;
+  width: 100%; /* max-width cũng đc */
+  height: 290px;
   object-fit: cover;
   border-radius: 6px;
   background: #eaf6ff;
@@ -363,15 +383,21 @@ a {
   margin-top: 38px;
   text-align: center;
 }
-.section__card:hover {
-  border: 10px solid #eaf6ff;
+.section__card:hover .section__img {
+  border: 6px solid #eaf6ff;
   border-radius: 20px;
   border-color: #7296e3;
-  transition: 0.2s;
-  transform: translateY(-16px);
+  transition: 0.5s;
+  /* transform: translateY(-16px); */
+  transform: scale(1.1);
   cursor: pointer;
 }
-/* Khối Take back your smile (Test - Tự Làm) */
+/* Cái nút qua trái - qua phải */
+.team__control {
+  margin-top: 38px;
+  justify-content: center;
+}
+/* ====== Khối Take back your smile (Test - Tự Làm) ====== */
 .smile {
   margin-top: 85px;
   padding: 85px 0 206px;
@@ -425,4 +451,12 @@ a {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.67; /* 166.667% */
+}
+.control__btn:hover {
+  background: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
+}
+.control__btn--next {
+  rotate: 180deg;
 }
