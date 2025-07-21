@@ -593,6 +593,8 @@ a {
   color: #10375c;
   font-size: 1.4rem;
 }
+
+.blog__readlink:hover,
 .blog__readlink--mini:hover {
   color: #2e80ce;
 }
@@ -612,4 +614,36 @@ a {
 .blog__item:hover .blog__pic {
   transform: scale(1.1);
   transition: 0.5s;
+}
+/* ======== phần appointment ======== */
+.appointment {
+  padding: 85px 0;
+}
+.appointment__main {
+  padding: 100px 0;
+  background: #f6fbff;
+  text-align: center;
+}
+.appointment__title {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+}
+.appointment__rectangle {
+  margin: 18px auto 0; /* không ăn text align centẻ vì bị giới hạn độ rộng và không có text bên trong nên k tính là inline đc mà là block */
+  max-width: 136px; /* thà thả trôi không có width để ăn theo container */
+  height: 2px;
+  background: #2e80ce;
+}
+.appointment__text {
+  max-width: 617px;
+  margin: 18px auto 0;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.appointment__btn {
+  margin-top: 38px;
 }
