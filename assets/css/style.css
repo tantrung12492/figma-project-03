@@ -593,8 +593,6 @@ a {
   color: #10375c;
   font-size: 1.4rem;
 }
-
-.blog__readlink:hover,
 .blog__readlink--mini:hover {
   color: #2e80ce;
 }
@@ -647,3 +645,4 @@ a {
 .appointment__btn {
   margin-top: 38px;
 }
+/* ======== phần Footer ======== */
