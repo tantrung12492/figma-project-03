@@ -14,6 +14,13 @@ body {
   font-size: 1.6rem;
 }
 /* ======== Phần Common (dùng chung) ======== */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -462,9 +469,6 @@ a {
   rotate: 180deg;
 }
 /* ======== Phần Mobile (tự làm thử) ======== */
-.mobile {
-  /* padding: 85px 0; */
-}
 .mobile__main {
   /* position: relative; LÀ 1 CÁCH KHÁC ĐỂ ĐIỀU KHIỂN TẤM ẢNH mobile__picture */
   margin: 180px 0 85px;
@@ -629,7 +633,7 @@ a {
   line-height: 1.2; /* 120% */
 }
 .appointment__rectangle {
-  margin: 18px auto 0; /* không ăn text align centẻ vì bị giới hạn độ rộng và không có text bên trong nên k tính là inline đc mà là block */
+  margin: 18px auto 0; /* không ăn text align center vì bị giới hạn độ rộng và không có text bên trong nên k tính là inline đc mà là block */
   max-width: 136px; /* thà thả trôi không có width để ăn theo container */
   height: 2px;
   background: #2e80ce;
@@ -646,3 +650,123 @@ a {
   margin-top: 38px;
 }
 /* ======== phần Footer ======== */
+.footer {
+  margin-top: 85px;
+  /* margin: 85px 0; */
+  padding: 100px;
+  background: #10375c;
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+.footer__title {
+  /* class của thẻ tiêu đề h3 */
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.footer__desc {
+  /* class của thẻ ul */
+  margin: 20px 0 28px;
+}
+
+.footer__link {
+  /* class của thẻ a */
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+  white-space: nowrap; /* Không xuống hàng*/
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__item {
+  /* class của thẻ li */
+  margin-bottom: 10px;
+}
+.footer__text {
+  /* class của thẻ p ở cột 1 */
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.footer-sub__text {
+  margin: 20px 0 10px;
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.footer__social {
+  margin: 20px 0 28px;
+  display: flex;
+  column-gap: 10px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.6s;
+}
+.footer__logo:hover {
+  background: #2e80ce;
+  color: #fff;
+}
+.footer-form {
+  display: flex;
+  gap: 12px;
+}
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  line-height: 1.86;
+}
+.footer-form__submit {
+  width: 108px;
+  height: 46px;
+  border-radius: 14px;
+  background: #2e80ce;
+  /* Phần text của nút trên figma */
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+  cursor: pointer;
+  border: none;
+}
+.footer-form__submit:hover {
+  opacity: 0.6;
+}
+.footer__copyright-text {
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+  margin-top: 28px;
+}
+.footer__copyright {
+  border-top: 1px solid #406181;
+}
