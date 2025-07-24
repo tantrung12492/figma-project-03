@@ -734,6 +734,7 @@ a {
   border: 1px solid #406181;
   background: transparent;
   outline: none;
+  padding-left: 12px;
   color: #fff;
 }
 .footer-form__input::placeholder {
